@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+    </head>
+    <body>
+        <a href="blog.html">Go to Blog</a>
+        <hr>
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Two</h3>
+        <h4>Heading Two</h4>
+        <h5>Heading Two</h5>
+        <h6>Heading Two</h6>
+
+        <!-- Paragraph -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur <strong>adipisicing</strong> elit. Iure, aliquam architecto eos iusto, accusamus libero, possimus nulla ullam tempore voluptatibus expedita quasi dicta veniam explicabo. Accusantium quibusdam quam harum ullam.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Doloremque dicta esse maiores numquam, <a href="http://google.com" target="_blank">libero iure veniam explicabo et commodi</a>, suscipit deserunt incidunt. Aperiam eligendi qui animi voluptatem tempore aut culpa?
+        </p>
+
+        <!-- Lists -->
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!-- Tables -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bill Smith</td>
+                    <td>Bill@gmail.com</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>John Smithers</td>
+                    <td>JSmithers@Yahoo.com</td>
+                    <td>57</td>
+                </tr>
+                <tr>
+                    <td>Mary Jane</td>
+                    <td>mj@gmail.com</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Forms -->
+        <form action="process.php" method="POST">
+            <div>
+                <label for="">First Name</label>
+                <input type="text" name="firstName" placeholder="Enter First Name">
+            </div>
+            <br>
+            <div>
+                <label for="">Last name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label for="">Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="">Gender</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="">Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label for="">Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+        <!-- Button -->
+        <button>Click Me</button> <!-- code behind button requires javascript hooking into click event -->
+        <br>
+
+        <!-- Image -->
+        <a href="images/sample.png">
+            <img width="200" src="images/sample.png" alt="bird picture">
+        </a>
+
+        <!-- Quotations -->
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laborum recusandae magni sunt rem consectetur ullam ipsam harum doloremque? Quae voluptas magnam placeat incidunt consectetur voluptatum, esse illo! Accusantium, repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae, placeat nam quo consequuntur laboriosam illum enim corporis saepe impedit aspernatur dolorum odit quam tenetur deleniti ex, cupiditate, consectetur beatae?
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+        <p><cite>HTML Crash Course</cite> by Brad Traversy</p>
+
+        <div style="margin-top:500px"></div>
+    </body>
+</html>
