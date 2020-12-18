@@ -1,0 +1,30 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+.home{
+    order: -1;
+}
+
+.search{
+    order: -2;
+}
+
+.logout{
+    order: -3;
+}
+
+/* 
+.home{
+    order: 3;
+}
+
+.search{
+    order: 2;
+}
+
+.logout{
+    order: 1;
+} 
+*/

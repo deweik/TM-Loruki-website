@@ -1,0 +1,26 @@
+.container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: row; /* row is default. Sets the main axis to be horizontal */
+    justify-content: flex-end;
+}
+
+/* .home {
+    margin-right: auto;
+} */
+
+/* .container > div {
+    flex: 1;
+} */
+
+/* .container > .search {
+    flex: 2;
+} */
+
+/* .search {
+    flex: 2;
+} */
+
+.logout, .home {
+    flex: 1;
+}
