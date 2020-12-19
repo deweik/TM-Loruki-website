@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* { /* Universal Reset */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;  /* get rid of the underlines */
+    color: #333
+}
+
+h1, h2 {
+    font-weight: 300; /* lessens up the boldness */
+    line-height: 1.2; /* bring lines closer together */
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0; /* top-bottom: 10, left-right: 0 */
+}
+
+img {
+    width: 100%; /* images take up all available container space, but don't bust out of container */
+}
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+}
+
+.navbar ul {       /* forces horizontal alignment of navbar ul items */
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto; /* keeps the container in the middle */
+    overflow: auto; /* gets rid of space above navbar caused by margin:10 set in h1 */
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
