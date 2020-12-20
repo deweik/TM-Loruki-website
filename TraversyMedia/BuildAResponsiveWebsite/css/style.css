@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+:root { /* global variables */
+    --primary-color: #047aed;
+}
+
 * { /* Universal Reset */
     box-sizing: border-box;
     padding: 0;
@@ -35,14 +39,19 @@ img {
     width: 100%; /* images take up all available container space, but don't bust out of container */
 }
 
+/* Navbar */
 .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
 
 .navbar ul {       /* forces horizontal alignment of navbar ul items */
     display: flex;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
 }
 
 .navbar .flex {
@@ -55,6 +64,28 @@ img {
     margin: 0 5px;
 }
 
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative; /* This will help if we need to position anything 'absolute' within the showcase */
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%; /* Overrides the general grid setting of 'repeat(2, 1fr)' */
+    gap: 30px;
+}
+
+/* Utilities */
 .container {
     max-width: 1100px;
     margin: 0 auto; /* keeps the container in the middle */
@@ -67,4 +98,13 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* repeat(2, 1fr) is same as 1fr 1fr */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Need to specify a height for vertical centering */
 }
