@@ -81,8 +81,36 @@ img {
 }
 
 .showcase .grid {
+    overflow: visible;
     grid-template-columns: 55% 45%; /* Overrides the general grid setting of 'repeat(2, 1fr)' */
     gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus {  /* turn off the box that normally appears when you click the input field */
+    outline: none;
 }
 
 /* Utilities */
@@ -91,6 +119,15 @@ img {
     margin: 0 auto; /* keeps the container in the middle */
     overflow: auto; /* gets rid of space above navbar caused by margin:10 set in h1 */
     padding: 0 40px;
+}
+
+.card {
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
 }
 
 .flex {
